@@ -15,16 +15,13 @@ body {
 /* ----------------------------Navbar------------------------------- */
 .navbar{
 
-    /* background-color: hotpink; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 4rem;
     padding-right: 4rem;
-    /* gap: 20rem; */
-    /* margin-left: 3px; */
-    /* padding-left: 2rem;
-    padding-right: 3rem; */
+    margin-top: 2rem;
+   
 
 }
 
@@ -46,7 +43,6 @@ body {
 }
 
 .home{
-    /* font-weight: 800; */
     color: #000000;
 }
  .btn-outline{
