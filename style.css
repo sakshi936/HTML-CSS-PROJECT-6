@@ -10,29 +10,26 @@ body {
     background-color: #fdfeff;
     font-family: "Open Sans", sans-serif;
     overflow: scroll;
-    /* padding-left: 4rem;
-    padding-right: 4rem; */
 }
 
 /* ----------------------------Navbar------------------------------- */
 .navbar{
 
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 4rem;
     padding-right: 4rem;
-
+    margin-top: 2rem;
+   
 
 }
 
 .navbar img{
-    margin-top: 3rem;
     height: 40px;
     width: 90px;
 }
-.list{
+.navbar .list{
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -46,11 +43,10 @@ body {
 }
 
 .home{
-  
     color: #000000;
 }
  .btn-outline{
-    border: 2px solid #1c8cef;
+    border: 2px solid  #1c8cef;
     border-radius: 10px;
     color: #1c8cef;
     width: 10rem;
@@ -89,8 +85,8 @@ body {
 }
 .btn{
     margin-top: 2rem;
-    background-color: #008af0;
-   color: #fdfeff;
+    background: linear-gradient(to right bottom, #11c0f8, #0566ea);
+    color: #fdfeff;
     border: none;
     border-radius: 10px;
     width: 12rem;
@@ -105,7 +101,6 @@ body {
 /* --------------------------------------- testing section -------------------------------------- */
 
 .testing{
-    /* background-color: salmon; */
    
     display: flex;
     justify-content: space-between;
@@ -135,6 +130,7 @@ body {
 
 
 .technical-section{
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,7 +174,8 @@ body {
 }
 
 .services-headline p{
-    color: #757875;
+    
+        color: #757875;
         font-weight: 500;
         font-size: 0.99rem;
 }
@@ -190,7 +187,6 @@ body {
     margin-top: 5rem;
     gap: 2rem;
 }
-
 .services-card p{
     margin-top: 1.5rem;
     color: #757875;
@@ -208,10 +204,10 @@ body {
 /* ----------------------------------------------- pricing section ------------------------------ */
 
 .pricing-wrapper{
-    background-color:#008af0;
+    background: linear-gradient(to right bottom, #11c0f8, #0566ea);
     margin-top: 5rem;
     padding-bottom: 4rem;
-  }
+}
 
 .pricing-wrapper h2{
     font-size: 3rem;
@@ -223,7 +219,7 @@ body {
 }
 
 .pricing{
-   display: flex;
+    display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     
@@ -239,13 +235,11 @@ body {
 }
 
 
-
-
 .card-heading{
 
     height: 10rem;
     border-radius: 15px;
-   display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -262,8 +256,8 @@ body {
     font-size: 1.5rem;
 }
 
-ul{
-    list-style-type: none;
+.pricing-card-body ul{
+   
     margin-top: 2rem;
 }
 
@@ -289,15 +283,14 @@ ul{
     align-items: center;
     justify-content: start;
     gap: 1rem;
-    margin-top: 1.5rem;
-    margin-left: 2rem;
-   color: #757875;
+    margin: 1.5rem 0rem 0rem 2rem;
+    color: #757875;
     font-weight: 600;
     font-size: 0.99rem;
 }
 
 .pricing-card-footer{
-   display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -322,9 +315,9 @@ ul{
 /* ------------------------------ customer section ----------------------- */
 
 .customer-section{
-   display: flex;
+    display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
     margin-top: 4rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -344,7 +337,7 @@ ul{
 }
 
 .customer-cards{
-   display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -355,8 +348,8 @@ ul{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 20px;
     margin-top: 2rem;
-    width: 580px;
-    height: 300px;
+    width: 46vw;
+    height: 55vh;
     padding: 2rem;
     
 }
@@ -377,13 +370,13 @@ ul{
 
 
 .footer{
-    background-color:  #1c8cef;;
+    background: linear-gradient(to right bottom, #11c0f8, #0566ea);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 2rem 4rem 3rem 4rem;
+    padding: 2rem 4rem 3rem 3rem;
    
 
 }
@@ -400,7 +393,7 @@ ul{
 }
 
 .footer-right .btn-outline{
-   border: 2px solid #fdfdfd;
+    border: 2px solid #fdfdfd;
     
     color: #ffffff;
     background-color: #1c8cef;;
@@ -411,10 +404,10 @@ ul{
 .bottom-footer{
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 6rem;
     margin-top: 4rem;
     margin-bottom: 3rem;
-    justify-content: center;
+    margin-left: 3rem;
 }
 
 
@@ -422,14 +415,24 @@ ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5rem;
+    gap: 6rem;
     
 }
 .footer-navbar h5{
     font-size: 1.5rem;
 }
 
-.bottom-footer p,li{
+.footer-navbar ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    color: #8787a0;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    
+
+}
+.bottom-footer p{
     margin-top: 2rem;
     color:#8787a0;
 }
@@ -437,8 +440,9 @@ ul{
 
 
 
-.Social-Med{
+.Social-Med ul{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -458,7 +462,6 @@ ul{
 
 
 /* Responsive  */
-
 
 
 @media only screen and (max-width: 1175px){
@@ -506,7 +509,6 @@ ul{
     
     .services-headline p{
         
-            /* margin-top: 1.5rem; */
             color: #757875;
             font-weight: 500;
             font-size: 0.8rem;
@@ -516,6 +518,11 @@ ul{
 }
 @media only screen and (max-width: 920px){
 
+
+    .navbar{
+        overflow: scroll;
+    }
+    /* ----------------hreo-section------------------- */
     .hero{
        
         flex-direction: column-reverse;
@@ -547,6 +554,8 @@ ul{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        /* gap: 1rem; */
+        
     }
     .technical-section{
         text-align: center;
@@ -558,7 +567,26 @@ ul{
        flex-direction: column;
        gap: 2rem;
     
+       h2{
+        text-align: center;
+       }
     }
+
+    
+    .services-card{
+        justify-content: center;
+    }
+
+    /* cutomer -section */
+
+    .customer-cards{
+        justify-content: center;
+       
+    }
+    .customer-card p{
+        font-size: 0.8rem;
+    }
+
 
 
 }
