@@ -1,532 +1,616 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hosting Landing Page</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <nav class="navbar">
-        <div class="logo">
-          <img src="./assets/Logo.png" alt="logo" />
-        </div>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+        box-sizing: border-box;
 
-        <div class="mobile-nav">
-          <div class="hamburger">
-            <svg viewBox="0 0 100 80" width="30" height="30">
-              <rect width="100" height="10"></rect>
-              <rect y="30" width="100" height="10"></rect>
-              <rect y="60" width="100" height="10"></rect>
-            </svg>
-          </div>
+}
 
-          <ul class="mobile-list">
-            <li class="list-item">Home</li>
-            <li class="list-item">Domain</li>
-            <li class="list-item">Hosting</li>
-            <li class="list-item">Features</li>
-            <li class="list-item">Pricing</li>
-            <li class="list-item">About Us</li>
-            <li class="list-item">
-              <button class="btn-outline">Register Now</button>
-            </li>
-          </ul>
-        </div>
+body {
+    background-color: #fdfeff;
+    font-family: "Open Sans", sans-serif;
+    overflow: scroll;
+    /* padding-left: 4rem;
+    padding-right: 4rem; */
+}
 
-        <ul class="list">
-          <li class="list-item home">Home</li>
-          <li class="list-item">Domain</li>
-          <li class="list-item">Hosting</li>
-          <li class="list-item">Features</li>
-          <li class="list-item">Pricing</li>
-          <li class="list-item">About Us</li>
-          <li class="list-item">
-            <button class="btn-outline">Register Now</button>
-          </li>
-        </ul>
-      </nav>
+/* ----------------------------Navbar------------------------------- */
+.navbar{
 
-      <!-- hero section -->
-      <section class="hero">
-        <div class="hero-left">
-          <h1>
-            Great Website Start <br />
-            with unlimited <br />
-            Hosting
-          </h1>
-          <p>
-            We provide the best offer of unlimited web hosting. The most
-            complete <br />
-            features, affordable prices, and 24/7 technical support at your
-            <br />
-            disposal.
-          </p>
-          <button class="btn btn-large">Choose Package</button>
-        </div>
-        <div class="hero-right">
-          <img src="./assets/server.svg" alt="image" />
-        </div>
-      </section>
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
 
-      <!-- testing section -->
-      <section class="testing">
-        <div class="testing-left">
-          <img src="./assets/testing.svg" alt="testing" />
-        </div>
-        <div class="testing-right">
-          <h2>
-            We Provide the best <br />
-            quality with low cost
-          </h2>
-          <p>
-            You can have a ready-made website for only a small fee. Complete
-            <br />
-            features will facilitate the website creation process, from
-            Auto-Install <br />
-            Wordpress, cPanel, to free SSL
-          </p>
-          <button class="btn">Read More</button>
-        </div>
-      </section>
 
-      <!-- technical-section -->
-      <section class="technical-section">
-        <div class="technical-section-left">
-          <h2>
-            Number 1 Technical <br />
-            Support in Indpnesia
-          </h2>
-          <p>
-            Contact Niagahoster's Custom Success Agent at any time when there is
-            a <br />
-            paroblem with your website. No need to wait long, your problem will
-            be <br />
-            resloved quickly and in real-time via intercom's live-chat.
-          </p>
-          <button class="btn">Read More</button>
-        </div>
-        <div class="technical-section-right">
-          <img src="./assets/technical support illustration-01.svg" alt="" />
-        </div>
-      </section>
+}
 
-      <!-- services section -->
-      <section class="services-section">
-        <div class="services-headline">
-          <h2>
-            Services We Provide <br />
-            At ThorHosting
-          </h2>
-          <p>
-            Contact Niagahoster's Customer Success Agent at any time when there
-            is a <br />
-            problem with your website. No need to wait long, your problem will
-            be <br />
-            resolved quickly
-          </p>
-        </div>
-        <div class="services-card">
-          <!-- <div class="cards"> -->
-          <!-- card 1 -->
-          <div class="card">
-            <img src="./assets/cloud-hosting.svg" alt="cloud" />
-            <h4>Unlimited Hosting</h4>
-            <p>
-              Amet minim molit non deserunt ullamco<br />
-              est sit aliuqa dolor to do amet sint. velitaty<br />officia duis
-              enim belit molit.
-            </p>
-          </div>
-          <!-- card 2 -->
-          <div class="card">
-            <img src="./assets/cloud-hosting.svg" alt="cloud" />
-            <h4>Cloud Hosting</h4>
-            <p>
-              Amet minim molit non deserunt ullamco<br />
-              est sit aliuqa dolor to do amet sint. velitaty<br />officia duis
-              enim belit molit.
-            </p>
-          </div>
-          <!-- card 3 -->
-          <div class="card">
-            <img
-              class="wordpress"
-              src="./assets/wordpress-hosting.svg"
-              alt="cloud"
-            />
-            <h4>Wordpress Hosting</h4>
-            <p>
-              Amet minim molit non deserunt ullamco<br />
-              est sit aliuqa dolor to do amet sint. velitaty<br />officia duis
-              enim belit molit.
-            </p>
-          </div>
-          <!-- </div> -->
-          <!-- <div class="cards"> -->
-          <!-- card 4 -->
-          <div class="card">
-            <img class="vps" src="./assets/vps.svg" alt="cloud" />
-            <h4>Fastest VPS</h4>
-            <p>
-              Amet minim molit non deserunt ullamco<br />
-              est sit aliuqa dolor to do amet sint. velitaty<br />officia duis
-              enim belit molit.
-            </p>
-          </div>
-          <!-- card 5 -->
-          <div class="card">
-            <img class="domain" src="./assets/Domain.svg" alt="cloud" />
-            <h4>Domain</h4>
-            <p>
-              Amet minim molit non deserunt ullamco<br />
-              est sit aliuqa dolor to do amet sint. velitaty<br />officia duis
-              enim belit molit.
-            </p>
-          </div>
-          <!-- card 6 -->
-          <div class="card">
-            <img class="builder" src="./assets/builder.svg" alt="cloud" />
-            <h4>Website Builder</h4>
-            <p>
-              Amet minim molit non deserunt ullamco<br />
-              est sit aliuqa dolor to do amet sint. velitaty<br />officia duis
-              enim belit molit.
-            </p>
-          </div>
-          <!-- </div> -->
-        </div>
-      </section>
+.navbar img{
+    margin-top: 3rem;
+    height: 40px;
+    width: 90px;
+}
+.list{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 0.9rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #757875;
+    
+}
 
-      <!-- pricing section -->
-      <section class="pricing-wrapper">
-        <h2>Flexible & Transparent Pricing</h2>
-        <div class="pricing">
-          <!-- pricing card 1 -->
-          <div class="pricing-card">
-            <div class="card-heading c-1">
-              <h4>Starter Pack</h4>
-              <p>Suitable for beginners</p>
-            </div>
-            <div class="pricing-card-body">
-              <ul>
-                <li>
-                  <span>
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <p>Up To 15,000 visitors/Month</p>
-                </li>
-                <li>
-                  <span>
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <p>Disk Space 500 MB</p>
-                </li>
-                <li>
-                  <span>
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <p>Unlimited Bandwidth</p>
-                </li>
-                <li>
-                  <span>
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <p>Unlimited Database</p>
-                </li>
-                <li>
-                  <span>
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <p>! Domain</p>
-                </li>
-              </ul>
-            </div>
-            <div class="pricing-card-footer">
-              <h4>$29.99 <span>/month</span></h4>
-              <p>Cancel Anytime</p>
-              <button class="btn-pricing btn-outline">Chose Plan</button>
-            </div>
-          </div>
+.home{
+  
+    color: #000000;
+}
+ .btn-outline{
+    border: 2px solid #1c8cef;
+    border-radius: 10px;
+    color: #1c8cef;
+    width: 10rem;
+    height: 50px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-          <!-- pricing card 2 -->
-          <div class="pricing-card">
-            <div class="card-heading c-2">
-              <h4>Popular Packages</h4>
-              <p>Suitable for company, orginazation</p>
-            </div>
-            <div class="pricing-card-body">
-              <ul>
-                <li>
-                  <span>
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <p>Up To 135,000 visitors/Month</p>
-                </li>
-                <li>
-                  <span>
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <p>Unlimited Disk Space</p>
-                </li>
-                <li>
-                  <span>
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <p>Unlimited Bandwidth</p>
-                </li>
-                <li>
-                  <span>
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <p>Unlimited POP3 Email</p>
-                </li>
-                <li>
-                  <span>
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <p>Unlimited Database</p>
-                </li>
-              </ul>
-            </div>
-            <div class="pricing-card-footer">
-              <h4>$59.99 <span>/month</span></h4>
-              <p>Cancel Anytime</p>
-              <button class="btn">Chose Plan</button>
-            </div>
-          </div>
+}
 
-          <!-- pricing card 3 -->
-          <div class="pricing-card">
-            <div class="card-heading c-3">
-              <h4>Buisness package</h4>
-              <p>Suitable for buisness websites</p>
-            </div>
-            <div class="pricing-card-body">
-              <ul>
-                <li>
-                  <span>
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <p>Up To 180,000 visitors/Month</p>
-                </li>
-                <li>
-                  <span>
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <p>Disk Space 500 MB</p>
-                </li>
-                <li>
-                  <span>
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <p>Unlimited Bandwidth</p>
-                </li>
-                <li>
-                  <span>
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <p>Unlimited Database</p>
-                </li>
-                <li>
-                  <span>
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <p>! Domain</p>
-                </li>
-              </ul>
-            </div>
-            <div class="pricing-card-footer">
-              <h4>$99.99 <span>/month</span></h4>
-              <p>Cancel Anytime</p>
-              <button class="btn-pricing btn-outline">Chose Plan</button>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- customer section -->
-      <section class="customer-section">
-        <h1>Our Customer Love Us</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          tempora ducimus explicabo optio quae. <br />
-          Facere quam perspiciatis maxime reprehenderit rem?
-        </p>
-        <div class="customer-cards">
-          <!-- card 1 -->
-          <div class="customer-card">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Obcaecati deleniti repudiandae facere, iusto quo voluptas labore
-              commodi ducimus delectus ullam id cumque impedit odit eius amet
-              dolor autem nam sunt repellat illum repellendus. Ut laborum, ipsum
-              ab rerum velit nulla!
-            </p>
-            <div class="customer-info">
-              <div class="div">
-                <img src="./assets/profile-holder.png" alt="image" />
-              </div>
-              <div class="info">
-                <h5>Michael Andrew</h5>
-                <p>CEO apple inc.</p>
-              </div>
-            </div>
-          </div>
-          <!-- card 2 -->
-          <div class="customer-card">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Obcaecati deleniti repudiandae facere, iusto quo voluptas labore
-              commodi ducimus delectus ullam id cumque impedit odit eius amet
-              dolor autem nam sunt repellat illum repellendus. Ut laborum, ipsum
-              ab rerum velit nulla!
-            </p>
-            <div class="customer-info">
-              <div class="div">
-                <img src="./assets/profile-holder.png" alt="image" />
-              </div>
-              <div class="info">
-                <h5>Michael Andrew</h5>
-                <p>CEO apple inc.</p>
-              </div>
-            </div>
-          </div>
-          <!-- card 3 -->
-          <div class="customer-card">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Obcaecati deleniti repudiandae facere, iusto quo voluptas labore
-              commodi ducimus delectus ullam id cumque impedit odit eius amet
-              dolor autem nam sunt repellat illum repellendus. Ut laborum, ipsum
-              ab rerum velit nulla!
-            </p>
-            <div class="customer-info">
-              <div class="div">
-                <img src="./assets/profile-holder.png" alt="image" />
-              </div>
-              <div class="info">
-                <h5>Michael Andrew</h5>
-                <p>CEO apple inc.</p>
-              </div>
-            </div>
-          </div>
-          <!-- card 4 -->
-          <div class="customer-card">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Obcaecati deleniti repudiandae facere, iusto quo voluptas labore
-              commodi ducimus delectus ullam id cumque impedit odit eius amet
-              dolor autem nam sunt repellat illum repellendus. Ut laborum, ipsum
-              ab rerum velit nulla!
-            </p>
-            <div class="customer-info">
-              <div class="div">
-                <img src="./assets/profile-holder.png" alt="image" />
-              </div>
-              <div class="info">
-                <h5>Michael Andrew</h5>
-                <p>CEO apple inc.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+.mobile-nav{
+    display: none;
+}
 
-      <div class="footer-wrapper">
-        <div class="footer-container">
-          <div class="footer">
-            <footer class="footer-left">
-              <h1>
-                Quit Worrying about <br />
-                Oce-Hosting services
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-                repudiandae tempora facilis
-              </p>
-            </footer>
-            <footer class="footer-right">
-              <button class="footer-btn btn-outline">Register Now</button>
-            </footer>
-          </div>
-          <div class="bottom-footer">
-            <div class="logo-container">
-              <div class="logo">
-                <img src="./assets/Logo.png" alt="logo" />
-                <p>
-                  Lorem ipsum dolor, sit amet <br />
-                  consectetur adipisicing elit. Officia, officiis?
-                  <br />
-                  Lorem ipsum dolor sit.
-                </p>
-              </div>
-            </div>
-            <div class="footer-navbar">
-              <div>
-                <h5>Menu</h5>
-                <ul>
-                  <li>Home</li>
-                  <li>Covid9</li>
-                  <li>Vaccine info</li>
-                  <li>Contact Us</li>
-                </ul>
-              </div>
-              <div>
-                <h5>Links</h5>
-                <ul>
-                  <li>Parteners</li>
-                  <li>Careers</li>
-                  <li>Press</li>
-                  <li>Community</li>
-                </ul>
-              </div>
-              <div>
-                <h5>Overview</h5>
-                <ul>
-                  <li>Terms & Conditions</li>
-                  <li>Privacy Policy</li>
-                  <li>FAQ</li>
-                </ul>
-              </div>
-              <div class="Social-Med">
-                <h5>Social Media</h5>
-                <ul>
-                  <li>
-                    <img src="./assets/fb.svg" alt="fb-icon" />
-                  </li>
-                  <li>
-                    <img src="./assets/ig.svg" alt="ig-icon" />
-                  </li>
-                  <li>
-                    <img src="./assets/youtube.svg" alt="yt" />
-                  </li>
-                  <li>
-                    <img src="./assets/linked-in.svg" alt="linked-in" />
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+/* ---------------------------------------------- hero section -------------------------------- */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    
+}
 
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const mobileNavBar = document.querySelector(".mobile-list");
-      hamburger.addEventListener("click", () => {
-        mobileNavBar.classList.toggle("show-navbar");
-      });
-    </script>
-  </body>
-</html>
+
+.hero-left h1{
+    font-size: 3rem;
+}
+.hero-left p{
+    margin-top: 1.5rem;
+    color: #757875;
+    font-weight: 500;
+    font-size: 0.99rem;
+}
+.btn{
+    margin-top: 2rem;
+    background-color: #008af0;
+   color: #fdfeff;
+    border: none;
+    border-radius: 10px;
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hero-right img{
+    width: 500px;
+}
+
+/* --------------------------------------- testing section -------------------------------------- */
+
+.testing{
+    /* background-color: salmon; */
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     margin-top: 5rem;
+     padding-left: 4rem;
+     padding-right: 4rem;
+}
+
+.testing-left img{
+    width: 550px;
+}
+
+
+.testing-right h2{
+    font-size: 3rem;
+}
+.testing-right p{
+    margin-top: 1.5rem;
+    color: #757875;
+    font-weight: 500;
+    font-size: 0.99rem;
+}
+
+/*----------------------------------------- technical-section ------------------------------------------- */
+
+
+
+.technical-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     margin-top: 5rem;
+     padding-left: 4rem;
+     padding-right: 4rem;
+}
+
+.technical-section img{
+    width: 500px;
+}
+
+
+.technical-section h2{
+    font-size: 3rem;
+}
+.technical-section p{
+    margin-top: 1.5rem;
+    color: #757875;
+    font-weight: 500;
+    font-size: 0.99rem;
+}
+
+
+/* -------------------------------------- services section ---------------------------------------- */
+
+.services-section{
+    margin-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.services-headline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.services-headline h2{
+    font-size: 3rem;
+}
+
+.services-headline p{
+    color: #757875;
+        font-weight: 500;
+        font-size: 0.99rem;
+}
+
+.services-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+.services-card p{
+    margin-top: 1.5rem;
+    color: #757875;
+    font-weight: 500;
+    font-size: 0.99rem;
+}
+.services-card h4{
+   
+    margin-top: 1rem;
+    
+}
+
+
+
+/* ----------------------------------------------- pricing section ------------------------------ */
+
+.pricing-wrapper{
+    background-color:#008af0;
+    margin-top: 5rem;
+    padding-bottom: 4rem;
+  }
+
+.pricing-wrapper h2{
+    font-size: 3rem;
+    color: #fdfeff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.pricing{
+   display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.pricing-card{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 350px;
+    height: 700px;
+    margin-top: 4rem;
+    
+}
+
+
+
+
+.card-heading{
+
+    height: 10rem;
+    border-radius: 15px;
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+ 
+}
+.c-2{
+    background-color:#2c2c2c;
+    color: #fdfeff;
+}
+
+.card-heading h4{
+    font-size: 1.5rem;
+}
+
+ul{
+    list-style-type: none;
+    margin-top: 2rem;
+}
+
+.pricing-card-body span{
+    width: 20px;
+    height: 20px;
+    border: 3px solid #20daaa;
+    color: #20daaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.card-heading p{
+    margin-top: 1rem;
+    color: #757875;
+    font-weight: 500;
+    font-size: 0.99rem;
+}
+.pricing-card-body li{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+   color: #757875;
+    font-weight: 600;
+    font-size: 0.99rem;
+}
+
+.pricing-card-footer{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.pricing-card-footer h4{
+    font-size: 2rem;
+}
+.pricing-card-footer span, p{
+    color: #757875;
+}
+
+.pricing-card-footer .btn-outline{
+    margin-top: 2rem;
+    width: 12rem;
+}
+
+
+
+
+/* ------------------------------ customer section ----------------------- */
+
+.customer-section{
+   display: flex;
+    flex-direction: column;
+   align-items: center;
+    margin-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+}
+
+.customer-section h1{
+    font-size: 3rem;
+    margin-top: 4rem;
+    
+}
+.customer-section p{
+    text-align: center;
+    color: #757875;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.customer-cards{
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+.customer-card{
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    margin-top: 2rem;
+    width: 580px;
+    height: 300px;
+    padding: 2rem;
+    
+}
+
+.customer-card p{
+    margin-top: 0;
+    text-align: left;
+    font-weight: 600;
+}
+
+.customer-info{
+    display: flex;
+    gap: 1rem;
+}
+
+
+/*-------------------------------------- footer----------------------------- */
+
+
+.footer{
+    background-color:  #1c8cef;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 4rem 3rem 4rem;
+   
+
+}
+
+
+.footer-left h1{
+    font-size: 2.5rem;
+    color: #fdfdfd;
+}
+
+.footer-left p{
+    margin-top: 2rem;
+    color: #fdfdfd;
+}
+
+.footer-right .btn-outline{
+   border: 2px solid #fdfdfd;
+    
+    color: #ffffff;
+    background-color: #1c8cef;;
+    font-size: 1rem;
+}
+
+
+.bottom-footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+
+
+.footer-navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    
+}
+.footer-navbar h5{
+    font-size: 1.5rem;
+}
+
+.bottom-footer p,li{
+    margin-top: 2rem;
+    color:#8787a0;
+}
+
+
+
+
+.Social-Med{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Social-Med img{
+    height: 35px;
+    width: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive  */
+
+
+
+@media only screen and (max-width: 1175px){
+   
+    .hero-right img{
+        width: 400px;
+    }
+    .hero-left h1{
+        font-size: 2.5rem;
+    }
+    .hero-left p{
+        font-size: 0.8rem;
+    }
+
+    /* -----------testing section---------- */
+
+    .testing-left img{
+        width: 400px;
+    }
+    .testing-right h2{
+        font-size: 2.5rem;
+    }
+    .testing-right p{
+        font-size: 0.8rem;
+    }
+    
+    /* -----------------technical-section----------------- */
+
+    .technical-section img{
+        width: 400px;
+    }
+    .technical-section h2{
+        font-size: 2.5rem;
+    }
+    .technical-section p{
+        font-size: 0.8rem;
+    }
+
+
+    /* -----------------services-headline----------------- */
+
+    .services-headline h2{
+        font-size: 2rem;
+    }
+    
+    .services-headline p{
+        
+            /* margin-top: 1.5rem; */
+            color: #757875;
+            font-weight: 500;
+            font-size: 0.8rem;
+    }
+
+
+}
+@media only screen and (max-width: 920px){
+
+    .hero{
+       
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+       
+    }
+    .hero-left{
+        text-align: center;
+    }
+
+    /* -----------------testing-section----------------- */
+    .testing{
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        
+    }
+    .testing-right{
+        text-align: center;
+    }
+
+    /* -----------------technical-section----------------- */
+    .technical-section{
+        
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .technical-section{
+        text-align: center;
+    }
+
+     /* -----------------services-headline----------------- */
+
+     .services-headline{
+       flex-direction: column;
+       gap: 2rem;
+    
+    }
+
+
+}
+@media only screen and (max-width: 600px){
+
+   
+   
+    .hero-left{
+        text-align: center;
+    }
+    .hero-right img{
+        width: 350px;
+    }
+    .hero-left h1{
+        font-size: 2rem;
+    }
+    .hero-left p{
+        font-size: 0.8rem;
+    }
+
+    /* -----------------testing-section----------------- */
+    .testing-right{
+        text-align: center;
+    }
+    .testing-left img{
+        width: 350px;
+    }
+    .testing-right h2{
+        font-size: 2rem;
+    }
+    .testing-right p{
+        font-size: 0.8rem;
+    }
+
+    /* -----------------technical-section----------------- */
+    .technical-section{
+        text-align: center;
+    }
+    .technical-section img{
+        width: 350px;
+    }
+    .technical-section h2{
+        font-size: 2rem;
+    }
+    .technical-section p{
+        font-size: 0.8rem;
+    }
+
+    /* ---------------------services-section------------------ */
+
+    .services-card{
+        justify-content: center;
+    }
+}
+
