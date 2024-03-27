@@ -14,8 +14,8 @@ This project is a responsive website built using HTML and CSS.
 <img width="946" alt="A6-3" src="https://github.com/sakshi936/HTML-CSS-PROJECT-6/assets/130241239/9614573c-f203-4f2a-846a-63b514bfa60a">
 <img width="956" alt="A6-4" src="https://github.com/sakshi936/HTML-CSS-PROJECT-6/assets/130241239/ac552f52-f15b-4067-8597-9262537bf78e">
 <img width="943" alt="A6-5" src="https://github.com/sakshi936/HTML-CSS-PROJECT-6/assets/130241239/befbc0ea-4b76-412f-81f7-a34a029ef046">
-<img width="948" alt="A6-6" src="https://github.com/sakshi936/HTML-CSS-PROJECT-6/assets/130241239/ba737d53-c5e6-4d8a-8eb0-e1706ce8e7a0">
 <img width="946" alt="A6-11" src="https://github.com/sakshi936/HTML-CSS-PROJECT-6/assets/130241239/252548bf-0b95-4a38-b3b0-c6b6aa63e362">
+<img width="948" alt="A6-6" src="https://github.com/sakshi936/HTML-CSS-PROJECT-6/assets/130241239/ba737d53-c5e6-4d8a-8eb0-e1706ce8e7a0">
 <img width="950" alt="A6-7" src="https://github.com/sakshi936/HTML-CSS-PROJECT-6/assets/130241239/c12ba722-2c86-4003-922d-cef09a76a5ad">
 
 
