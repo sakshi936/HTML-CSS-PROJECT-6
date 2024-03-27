@@ -1,4 +1,4 @@
-<img width="944" alt="A6-2" src="https://github.com/sakshi936/HTML-CSS-PROJECT-6/assets/130241239/9c2841f9-574a-479a-a13b-02bf2ca13d6f"><img width="949" alt="A6-1" src="https://github.com/sakshi936/HTML-CSS-PROJECT-6/assets/130241239/a4c367ca-0c9e-4021-94a7-29922a42637b">
+
 ## HTML-CSS-PROJECT-6 | Hosting Landing Page
  
 
